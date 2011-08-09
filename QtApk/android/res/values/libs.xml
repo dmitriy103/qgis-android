@@ -6,5 +6,6 @@
     </array>
     <array name="bundled_libs">
         <item>proj</item>
+        <item>geos_c</item>
     </array>
 </resources>

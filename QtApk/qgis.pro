@@ -24,8 +24,14 @@ QT       += core gui
 TARGET = qgis
 TEMPLATE = app
 
-INCLUDEPATH += /home/marco/apps/test/include
-LIBS+=-L/home/marco/apps/test/lib -lproj -geos_c
+DESTDIR = android/libs/$$(ANDROID_TARGET_ARCH)
+#OBJECTS_DIR = build/.obj
+#MOC_DIR = build/.moc
+#RCC_DIR = build/.rcc
+#UI_DIR = build/.ui
+
+INCLUDEPATH += $$(INSTALL_DIR)/include
+LIBS+=-L$$(INSTALL_DIR)/lib -lproj -geos_c
 
 
 SOURCES += main.cpp\
@@ -38,12 +44,6 @@ FORMS    += window.ui
 CONFIG += mobility
 MOBILITY = 
 
-symbian {
-    TARGET.UID3 = 0xed018c32
-    # TARGET.CAPABILITY += 
-    TARGET.EPOCSTACKSIZE = 0x14000
-    TARGET.EPOCHEAPSIZE = 0x020000 0x800000
-}
 
 OTHER_FILES += \
     android/AndroidManifest.xml \
