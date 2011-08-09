@@ -25,10 +25,6 @@ TARGET = qgis
 TEMPLATE = app
 
 DESTDIR = android/libs/$$(ANDROID_TARGET_ARCH)
-#OBJECTS_DIR = build/.obj
-#MOC_DIR = build/.moc
-#RCC_DIR = build/.rcc
-#UI_DIR = build/.ui
 
 INCLUDEPATH += $$(INSTALL_DIR)/include
 LIBS+=-L$$(INSTALL_DIR)/lib -lproj -geos_c
