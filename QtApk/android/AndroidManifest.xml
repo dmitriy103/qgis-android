@@ -11,6 +11,7 @@
             <meta-data android:name="android.app.lib_name" android:value="qgis"/>
         </activity>
     </application>
+    <uses-sdk android:minSdkVersion="10"/>
     <supports-screens android:largeScreens="true" android:normalScreens="true" android:anyDensity="true" android:smallScreens="true"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
