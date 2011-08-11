@@ -27,7 +27,7 @@ TEMPLATE = app
 DESTDIR = android/libs/$$(ANDROID_TARGET_ARCH)
 
 INCLUDEPATH += $$(INSTALL_DIR)/include
-LIBS+=-L$$(INSTALL_DIR)/lib -lproj -geos_c
+LIBS+=-L$$(INSTALL_DIR)/lib -lproj
 
 
 SOURCES += main.cpp\
